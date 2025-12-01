@@ -1,0 +1,46 @@
+# Example GitHub Actions workflow for Quire integration
+
+name: Update Quire Task on Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  update-quire:
+    # Only run if PR was actually merged (not just closed)
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Update Quire task
+        env:
+          QUIRE_CLIENT_ID: ${{ secrets.QUIRE_CLIENT_ID }}
+          QUIRE_CLIENT_SECRET: ${{ secrets.QUIRE_CLIENT_SECRET }}
+          QUIRE_REFRESH_TOKEN: ${{ secrets.QUIRE_REFRESH_TOKEN }}
+          BRANCH_NAME: ${{ github.head_ref }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BUILD_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python scripts/ci_update_task.py
+
+# To use this workflow:
+# 1. Copy this file to .github/workflows/quire-update.yml in your repo
+# 2. Add these secrets to your GitHub repository:
+#    - QUIRE_CLIENT_ID
+#    - QUIRE_CLIENT_SECRET
+#    - QUIRE_REFRESH_TOKEN
+# 3. Use branch naming: feature/TASK_OID-description
+# 4. When PR is merged, task will be automatically updated to "Done"
