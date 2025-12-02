@@ -1,0 +1,73 @@
+Task Name,Priority,Tags,Due Date,Time Estimate (hours),Description,Status
+Custom fields system - Backend & Frontend,1,"backend,frontend",2025-12-07,8,"Estimated: 8 hours
+Week 1
+Priority: High",0
+Custom field validation & API integration,1,"backend,api",2025-12-07,6,"Estimated: 6 hours
+Week 1
+Priority: High",0
+Teams feature implementation,1,"feature,backend",2025-12-07,6,"Estimated: 6 hours
+Week 1
+Priority: High",0
+Employee profile page development,1,"frontend,profile",2025-12-07,8,"Estimated: 8 hours
+Week 1
+Priority: High",0
+Multi-language i18n system,1,"frontend,i18n",2025-12-07,6,"Estimated: 6 hours
+Week 1
+Priority: High",0
+RTL support for Arabic/Farsi,0,"frontend,rtl",2025-12-07,8,"Estimated: 8 hours
+Week 1
+Priority: Medium",0
+Navigation i18n implementation,0,"frontend,i18n",2025-12-07,6,"Estimated: 6 hours
+Week 1
+Priority: Medium",0
+Employee login system,0,"auth,backend",2025-12-07,6,"Estimated: 6 hours
+Week 1
+Priority: Medium",0
+Custom fields UI refactoring,0,"frontend,refactor",2025-12-07,4,"Estimated: 4 hours
+Week 1
+Priority: Medium",0
+Logout functionality for employees,0,"auth,frontend",2025-12-07,2,"Estimated: 2 hours
+Week 1
+Priority: Medium",0
+Profile section styling improvements,0,"frontend,ui",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Medium",0
+Employee dashboard layout,0,"frontend,dashboard",2025-12-14,4,"Estimated: 4 hours
+Week 2
+Priority: Medium",0
+Login page improvements,0,"frontend,auth",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Medium",0
+Database schema updates,0,"backend,database",2025-12-14,4,"Estimated: 4 hours
+Week 2
+Priority: Medium",0
+Infinite loop bug fixes,0,"bugfix,frontend",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Medium",0
+Navigation cleanup,0,"frontend,cleanup",2025-12-14,2,"Estimated: 2 hours
+Week 2
+Priority: Medium",0
+Conditional rendering fixes,0,"frontend,bugfix",2025-12-14,2,"Estimated: 2 hours
+Week 2
+Priority: Medium",0
+Dual login system setup,0,"auth,backend",2025-12-14,2,"Estimated: 2 hours
+Week 2
+Priority: Medium",0
+Custom fields management UI,-1,"frontend,ui",2025-12-14,4,"Estimated: 4 hours
+Week 2
+Priority: Low",0
+Teams data migration,-1,"backend,migration",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Low",0
+Login debugging & testing,-1,"testing,auth",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Low",0
+RTL testing & validation,-1,"testing,rtl",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Low",0
+UI polish & improvements,-1,"frontend,polish",2025-12-14,3,"Estimated: 3 hours
+Week 2
+Priority: Low",0
+Documentation updates,-1,docs,2025-12-14,2,"Estimated: 2 hours
+Week 2
+Priority: Low",0
